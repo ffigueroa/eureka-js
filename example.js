@@ -1,5 +1,5 @@
 // assuming no transpiler here
-const Eureka = require('eureka-js-client').Eureka;
+const Eureka = require('eureka-js').Eureka;
 
 // example configuration
 const client = new Eureka({
