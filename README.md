@@ -1,7 +1,8 @@
-# eureka-js-client
+# eureka-js
 [![npm version](https://badge.fury.io/js/eureka-js-client.svg)](http://badge.fury.io/js/eureka-js-client) [![Build Status](https://api.travis-ci.org/jquatier/eureka-js-client.svg?branch=master)](https://travis-ci.org/jquatier/eureka-js-client) [![Coverage Status](https://coveralls.io/repos/jquatier/eureka-js-client/badge.svg?branch=master&service=github)](https://coveralls.io/github/jquatier/eureka-js-client?branch=master) [![Dependency Status](https://david-dm.org/jquatier/eureka-js-client.svg)](https://david-dm.org/jquatier/eureka-js-client) [![bitHound Overall Score](https://www.bithound.io/github/jquatier/eureka-js-client/badges/score.svg)](https://www.bithound.io/github/jquatier/eureka-js-client)
 
 A JavaScript implementation of a client for Eureka (https://github.com/Netflix/eureka), the Netflix OSS service registry.
+Using got instead of request that has been deprecated and causing vulnerabilities.
 
 ![](./img/eureka-js-client.jpg)
 
@@ -18,10 +19,10 @@ npm install eureka-js-client --save
 The Eureka module exports a JavaScript function that can be constructed.
 
 ```javascript
-import Eureka from 'eureka-js-client';
+import Eureka from 'eureka-js';
 
 // Or, if you're not using a transpiler:
-const Eureka = require('eureka-js-client').Eureka;
+const Eureka = require('eureka-js').Eureka;
 
 // example configuration
 const client = new Eureka({
