@@ -11,7 +11,7 @@ Using got instead of request that has been deprecated and causing vulnerabilitie
 First, install the module into your node project:
 
 ```shell
-npm install eureka-js-client --save
+npm install eureka-js --save
 ```
 
 ### Add Eureka client to a Node application.
